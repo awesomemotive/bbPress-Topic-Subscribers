@@ -75,7 +75,7 @@ class bbPress_Topic_Subscribers extends WP_Widget {
 	 * Back-end widget form.
 	 */
 	public function form( $instance ) {
-		$title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'New title', 'bbpress_topic_subscribers' );
+		$title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'Topic Subscribers:', 'bbpress_topic_subscribers' );
 		?>
 		<p>
 		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
